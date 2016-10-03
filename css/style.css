@@ -1,19 +1,19 @@
 ﻿
 /* ==================================================================================
-   
+
     Template Name : Infinite
-    Description : Professional & Creative Multipurpose Landing Page HTML5 Template 
+    Description : Professional & Creative Multipurpose Landing Page HTML5 Template
     Version : 1.3
     Author : Naveen Kumar
 
-    IF YOU NEED ANY KIND OF HELP REGARDING TO THIS TEMPLATE 
+    IF YOU NEED ANY KIND OF HELP REGARDING TO THIS TEMPLATE
     SO, DIRECT E-MAIL US AT :- support@wpsolutiongroup.com
 
 
     Copyright 2016 WP Solution Group
     http://www.wpsolutiongroup.com/
-	
-===================================================================================== 
+
+=====================================================================================
 
 
 
@@ -24,7 +24,7 @@ ______________________________
 1.Common Styles
 2.Main Navigation
 3.Intro Sections
-    a.Intro Basic 
+    a.Intro Basic
     b.Video Intro
     c.Image Intro
     d.Registration Intro
@@ -48,7 +48,7 @@ ______________________________
 20.Particle Background
 21.Text Rotator
 
-========================================================================== 
+==========================================================================
 
 */
 
@@ -203,9 +203,9 @@ ______________________________
     animation-name: fadeOut;
   }
 
-::selection,::-moz-selection { 
+::selection,::-moz-selection {
   background-color: #1ABC9C;
-  color: #fff; 
+  color: #fff;
 }
 
 ::-moz-selection {
@@ -218,7 +218,7 @@ ______________________________
 }
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-rendering: optimizeLegibility!important;
@@ -228,31 +228,31 @@ ______________________________
 }
 
 
-body { 
-  font-weight: 400; 
+body {
+  font-weight: 400;
   font-family: "Ubuntu", sans-serif;
-  color: #4c4c4c; 
+  color: #4c4c4c;
   font-size: 16px;
   line-height:27px;
   background: #fff;
-  margin: 0; 
+  margin: 0;
 }
 
-a { 
+a {
   color: #1ABC9C;
 }
 
 a:hover, a:active, a:focus {
   color: #000;
-  text-decoration: none; 
-  outline: none; 
-  -webkit-transition:color 100ms; 
+  text-decoration: none;
+  outline: none;
+  -webkit-transition:color 100ms;
           transition:color 100ms;
-} 
+}
 
 p {
  font-size: 16px;
- line-height: 27px; 
+ line-height: 27px;
  color: #939598;
 }
 
@@ -282,17 +282,17 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
   /*color: #494949;*/
 }
 
-h1,.h1 { font-size: 66px; font-weight: 300; } 
-h2,.h2 { font-size: 56px; font-weight: 300; } 
-h3,.h3 { font-size: 46px; font-weight: 300; } 
-h4,.h4 { font-size: 26px; font-weight: 400; } 
+h1,.h1 { font-size: 66px; font-weight: 300; }
+h2,.h2 { font-size: 56px; font-weight: 300; }
+h3,.h3 { font-size: 46px; font-weight: 300; }
+h4,.h4 { font-size: 26px; font-weight: 400; }
 h5,.h5 { font-size: 20px; font-weight: 400; }
 h6,.h6 { font-size: 16px; font-weight: 400; }
 
 @media (max-width: 1024px){
-  h1,.h1 { font-size: 56px;  } 
-h2,.h2 { font-size: 46px; } 
-h3,.h3 { font-size: 36px; } 
+  h1,.h1 { font-size: 56px;  }
+h2,.h2 { font-size: 46px; }
+h3,.h3 { font-size: 36px; }
 }
 
 
@@ -320,8 +320,8 @@ i,span{
   color: #fff;
 }
 
-.base-highlight { 
-  color: #1ABC9C; 
+.base-highlight {
+  color: #1ABC9C;
 }
 
 .color_overlay {
@@ -407,7 +407,7 @@ i,span{
 }
 
 /*
-             Backgrounds 
+             Backgrounds
 -----------------------------------------------------------------------------------------*/
 
 .cover-bg,
@@ -575,16 +575,16 @@ i,span{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-align-items: center; 
-  -webkit-box-pack: center; 
-  -ms-flex-pack: center; 
-  justify-content: center; 
-  -webkit-justify-content: center; 
-  -webkit-box-orient: horizontal; 
-  -webkit-box-direction: normal; 
-  -ms-flex-direction: row; 
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-direction: row; 
+  -webkit-flex-direction: row;
 }
 
 @media (max-width: 992px) {
@@ -592,7 +592,7 @@ i,span{
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  
+
   .row [class^=col-] {
     padding-bottom: 40px;
   }
@@ -913,7 +913,7 @@ margin-bottom: 20px;
 
 .btn-sm{
   padding: 11px 25px;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .btn-xs{
@@ -947,7 +947,7 @@ margin-bottom: 20px;
 .dwn-ld-btn:focus{
   background:#000;
   color: #1ABC9C;
-  
+
 }
 
 .dwn-ld-btn b {
@@ -1047,7 +1047,7 @@ textarea.form-control:active{
 
 .form-tooltip ul > li{
   position: relative;
-  padding-top:20px; 
+  padding-top:20px;
   font-weight: bold;
   background: #1ABC9C;
   font-size: 11px;
@@ -1150,7 +1150,7 @@ textarea.form-control:active{
   font-weight: 100;
 }
 .mfp-arrow:before,.mfp-arrow:after{
-  
+
   color: #000;
   font-size: 90px;
   border-width: 0;
@@ -1223,7 +1223,7 @@ textarea.form-control:active{
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  padding-top:20px; 
+  padding-top:20px;
   font-weight: 400;
 
 }
@@ -1462,8 +1462,8 @@ textarea.form-control:active{
     float: none;
   }
 
-  .main-menu .navbar-collapse.collapse.in { 
-    display: block!important; 
+  .main-menu .navbar-collapse.collapse.in {
+    display: block!important;
     overflow-y: auto!important;
     visibility: visible!important;
     padding-bottom: 10px;
@@ -1520,7 +1520,7 @@ textarea.form-control:active{
   animation-duration: 2s;
   -webkit-animation-iteration-count:infinite;
   animation-iteration-count:infinite
-  
+
 }
 
 
@@ -1551,7 +1551,7 @@ textarea.form-control:active{
     border-bottom: 1px solid #f3f3f3;
   }
   .main-menu .social .social_blinker{
-    display:inline-block!important; 
+    display:inline-block!important;
   }
 
 }
@@ -1778,7 +1778,7 @@ color: #ddd;
   border-width: 0px;
   border-radius:0;
   box-shadow: none;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .accordion .title{
@@ -1835,8 +1835,8 @@ color: #ddd;
   font-size: 14px;
   line-height: 1.8;
   background-color: #fff;
-  border-right:1px solid #ddd; 
-  border-left:1px solid #ddd; 
+  border-right:1px solid #ddd;
+  border-left:1px solid #ddd;
 }
 
 .accordion .title a,
@@ -1859,7 +1859,7 @@ color: #ddd;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   position: relative;
   overflow: hidden;
-  padding: 20px 40px 40px 40px; ;
+  padding: 20px 40px 40px 40px;
   margin-bottom: 18px;
   background-color: #ffffff;
   text-align: center;
@@ -1915,6 +1915,8 @@ color: #ddd;
   display: block;
 }
 
+/*-----
+
 .service-category .sub-services li a:hover{
   background: #f2f2f2;
 }
@@ -1959,6 +1961,14 @@ color: #ddd;
     font-size: 20px;
   }
 }
+
+-------*/
+
+.service-category h4 {
+  font-size: 18px;
+}
+
+
 /*----------------------------------------------------------------------------------------
             What we are section
 ----------------------------------------------------------------------------------------*/
@@ -1981,7 +1991,7 @@ color: #ddd;
   color: #777;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  border-top: 1px solid rgba(221, 221, 221, 0.56); 
+  border-top: 1px solid rgba(221, 221, 221, 0.56);
 }
 
 .about-us .nav-tabs>li.active>a,
@@ -2181,11 +2191,13 @@ color: #ddd;
   padding: 0 10px 30px 10px;
 }
 
-.team .member-details:hover{
+/*---- .team .member-details:hover{
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.3);
   -webkit-transition:box-shadow 400ms ease-in;
   transition:box-shadow 400ms ease-in;
 }
+
+---*/
 
 .team .member-details .team-info{
   padding-top: 15px;
@@ -2207,8 +2219,8 @@ color: #ddd;
   position: relative;
 }
 .team_member_bio .member_details{
-  padding-top: 40px; 
-  padding-bottom: 40px; 
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .team_member_bio .member_details img{
@@ -2286,11 +2298,11 @@ color: #ddd;
     margin-right: auto;
   }
 }
-/* 
+/*
 
 
 /*----------------------------------------------------------------------------------------
-            Extra care 
+            Extra care
 ----------------------------------------------------------------------------------------*/
 
 .content_4 .part li {
@@ -2319,7 +2331,7 @@ color: #ddd;
 
 
 /*----------------------------------------------------------------------------------------
-            Statistics 
+            Statistics
 ----------------------------------------------------------------------------------------*/
 .statistics .counter_wraper .count i{
   font-size: 46px;
@@ -2404,7 +2416,7 @@ color: #ddd;
 }
 
 /*----------------------------------------------------------------------------------------
-            Pricing Table 
+            Pricing Table
 ----------------------------------------------------------------------------------------*/
 .pricing-tables .pricing-table {
   background-color: #fff;
@@ -2552,11 +2564,11 @@ color: #ddd;
 }
 
 .google-map {
-   width: 100%; 
+   width: 100%;
    height: 200px;
 }
-.google-map img { 
-   max-width: none; 
+.google-map img {
+   max-width: none;
 }
 
 .content-contact-section {
@@ -2614,29 +2626,29 @@ color: #ddd;
         margin-bottom:25px;
         border-top:1px solid #818181;
     }
-	
+
     .right-row-border div:first-child .content-contact {
         border-top:0
     }
-	
+
 	.right-row-border div:nth-child(3n+2) .content-contact {
 		padding-left:0;
 	}
-	
+
     .right-row-border .content-contact .icon {
         margin-top:0;
         height:auto
     }
-	
+
 	.right-row-border div:first-child .content-contact-info{
         margin:0;
     }
-	
+
     .right-row-border .content-contact-info{
         padding:30px 0 0;
         margin:30px 0 0
     }
-	
+
     .right-row-border .content-contact-info:before{
         top:0;
         left:0;
