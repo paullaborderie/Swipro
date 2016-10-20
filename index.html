@@ -61,10 +61,16 @@
           <span aria-hidden="true">&times;</span>
         </button>
 
-        <h3 class="h3"> Recevoir notre plaquette </h3>
+        <h3 class="h3"> Inscrivez-vous, nous vous contacterons au plus vite :</h3>
       </div>
       <div class="modal-body">
+              <div class="">
+                  <h4>Informations sur l'Utilisateur</h4>
+                </div>
               <form class="registration" id="kitmedia-form">
+                <div class="form-group ">
+                  <input type="text" class="form-control" id="contact-kitmedia-organization" name="contact-kitmedia-organization" placeholder="Organisation (Opitionnel)" data-error="Votre Nom">
+                </div>
                 <div class="form-group ">
                   <input type="text" class="form-control" id="contact-kitmedia-firstname" name="contact-kitmedia-firstname" placeholder="Prénom" data-error="Votre Prénom" required="">
                 </div>
@@ -75,14 +81,40 @@
                   <input type="email" class="form-control" placeholder="Email" id="contact-kitmedia-email" name="contact-kitmedia-email" data-error="Votre email" required="">
                 </div>
                 <div class="form-group ">
-                  <input type="text" placeholder="Société" data-minlength="6"  id="contact-kitmedia-company" name="contact-kitmedia-company"  class="form-control" required="">
-                </div>
-                <div class="form-group ">
                   <input type="text" class="form-control" placeholder="Numéro de téléphone" id="contact-kitmedia-phone" name="contact-kitmedia-phone"  pattern="^[_0-9]{1,}$" maxlength="14" required="">
                 </div>
+                <div class="">
+                  <h4>Informations sur l'Application</h4>
+                </div>
+                <div class="form-group ">
+                  <label for="contact-kitmedia-organisation">Nom de l'App</label>
+                  <input type="text" class="form-control" id="contact-kitmedia-applicationname" name="contact-kitmedia-applicationname" placeholder="Nom" data-error="Votre Nom">
+                </div>
+                <div class="form-group ">
+                  <label for="contact-kitmedia-organisation">Catégorie de l'App</label>
+                  <div class="form-group">
+                  <select name="contact-kitmedia-applicationcategory" id="contact-kitmedia-applicationcategory" data-error="La Catégorie de votre App">
+                    <option value="media">media</option>
+                    <option value="gaming">gaming</option>
+                    <option value="travel">travel</option>
+                    <option value="e-commerce">e-commerce</option>
+                    <option value="finance">finance</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="form-group ">
+                  <label for="contact-kitmedia-organisation">Google Play store URL</label>
+                  <input type="text" class="form-control" id="contact-kitmedia-applicationstoreurl" name="contact-kitmedia-applicationstoreurl" placeholder="Store URL" data-error="Le Store URL de votre App">
+                </div>
+                <div class="form-group ">
+                  <label for="contact-kitmedia-organisation">Courte description de votre App</label>
+                  <input type="text" class="form-control" id="contact-kitmedia-applicationdescription" name="contact-kitmedia-applicationdescription" placeholder="Description" data-error="La description de votre App">
+                </div>
+                <div class="">
+                  <p>Vous pouvez écrire jusqu'à 250 caractères.</p>
+                </div>
                 <div class="form-group">
-                  <button type="submit" class="mar-top btn btn-primary btn-block">Télécharger</button>
-                  <button type="button" class="mar-top- btn btn-secondary btn-block" data-dismiss="modal">Fermer</button>
+                  <button type="submit" class="mar-top btn btn-primary btn-block">Envoyer</button>
                 </div>
               </form>
               <!-- /End Form -->
@@ -105,11 +137,12 @@
 
       <div class="collapse navbar-collapse navMenuCollapse">
         <ul class="nav">
-          <li><a href="#technologie">Notre technologie</a></li>
           <li><a href="#objectifs">Vos Objectifs</a></li>
+          <li><a href="#technologie">Notre solution</a></li>
           <li><a href="#press">Presse</a></li>
           <li><a href="#team">Equipe</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal">Devenez Beta Testeur</a></li>
         </ul>
       </div>
 
@@ -117,84 +150,45 @@
   </nav>
   <!-- main-menu end -->
 
-
-
 <!-- main-content start -->
 <div id="main-content">
 
+  <!-- intro-basic -->
+  <header class="intro intro-basic cover-bg fixed-bg padding dark-bg">
+   <div class="color_overlay"></div>
 
-  <!-- .intro-video -->
- <section class="intro intro-video dark-bg">
-  <div class="color_overlay"></div>
-
-  <div class="slider-fade-bg">
-      <div class="slide">
-        <div class="cover-bg" style="background-image: url(img/background/bg_pokemongo.jpeg);"></div>
-      </div>
-      <div class="slide">
-        <div class="cover-bg" style="background-image: url(img/background/bg_worktablet.jpeg);"></div>
-      </div>
-      <div class="slide">
-        <div class="cover-bg" style="background-image: url(img/background/bg_mobilecoffee.jpEg);"></div>
-      </div>
+   <div class="slider-fade-bg">
+    <div class="slide">
+      <div class="cover-bg fixed-bg" style="background-image: url(img/background/bg_mobilecoffee.jpeg);"></div>
     </div>
-
-
-  <div class="container double-padding">
-    <div class="hero-text text-center">
-      <h2 class="title">Découvrez Swipro</h2>
-      <h1 class="slogan">Vos notifications push sur le premier écran du smartphone.</h1>
-      <h2 class="sub">Atteignez vos utilisateurs dès l'écran de verrouillage.</h2>
-      <a href="video/sdk_demo_video.mp4" class="play fa fa-play-circle-o mar-bottom-2 mar-top-1" data-effect="mfp_zoom_out"></a>
+    <div class="slide">
+      <div class="cover-bg fixed-bg" style="background-image: url(img/background/bg_worktablet.jpeg);"></div>
     </div>
-
-    <div class="fast-subscribe-form text-center">
-      <div class="button-box">
-        <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i> Télécharger notre plaquette</a>
-      </div>
+    <div class="slide">
+      <div class="cover-bg fixed-bg" style="background-image: url(img/background/bg_pokemongo.jpeg);"></div>
     </div>
   </div>
 
-</section>
-<!-- .intro-video end -->
-
-
-
-  <!-- features-grid -->
-  <section id="technologie" class="features-grid pad-top-1 pad-bottom-2 bb-1">
-    <div class="container">
-
-      <header class="heading_1 text-center">
-        <i class="icon icon-presentation"></i>
-        <h2 class="main_title">
-          Notifications Push <span class="base-highlight">Premium</span>
-        </h2>
-      </header>
-
-
-      <div class="row text-center">
-
-        <div class="col-sm-4">
-          <i class="icon-mobile icon-color-1"></i>
-          <h4>Android SDK</h4>
-          <p>Notre technologie s'intègre dans le code source de votre app et fonctionne sur l'ensemble des devices Android.</p>
-        </div>
-        <div class="col-sm-4">
-          <i class="icon-rss icon-color-2"></i>
-          <h4>API</h4>
-          <p>Nous récupérons vos flux (ex: RSS) afin de les afficher directement sur l'écran de verrouillage de l'utilisateur.</p>
-        </div>
-        <div class="col-sm-4">
-          <i class="icon-target icon-color-3"></i>
-          <h4>Back Office</h4>
-          <p>Gérer votre audience et suivez en temps réel l'engagement avec vos utilisateurs.</p>
-        </div>
-
+  <div class="container mar-bottom-1">
+    <div class="row">
+      <div class="col-md-7">
+      <img class="img-responsive" src="img/gif/intro_video_xlarge.gif" alt="Intro Image">
       </div>
-    </div>
-  </section>
-  <!-- features-grid end -->
+      <div class="col-md-5">
+        <div class="caption">
+          <h1 class="title">Découvrez Swipro <br><strong> Lock Screen SDK </strong> pour Android </h1>
 
+          <h2 class="subtitle"><strong>Des Notifications Push Nouvelle Génération, interactives, en plein écran, pour du contenu riche.</strong></h2>
+
+          <div class="fast-subscribe-form text-center">
+            <div class="button-box">
+              <a class="btn btn-border-extra mar-top" data-toggle="modal" data-target="#myModal"> Devenez Beta Testeur </a>
+            </div>
+          </div>
+          <p class="desc"> Intégrez notre technologie à votre app pour publier vos notifications push interactives, en plein écran, sur le seul espace vu en moyenne 250 fois par jours par vos utilisateurs : l'écran de verrouillage.</p>
+  </div>
+</header>
+<!-- intro-basic end -->
 
 
 <!-- content-section -->
@@ -281,15 +275,14 @@
 </section> -->
 <!-- content-section end -->
 
-
 <!-- services -->
  <section id="services" class="services padding gray-bg" data-stellar-background-ratio="0.3">
   <div class="container">
 
     <header class="heading_1 text-center">
-      <i class="icon icon-tools"></i>
+      <i class="icon icon-presentation"></i>
       <h2 class="main_title">
-        Atteignez vos <span class="base-highlight">Objectifs</span>
+        Jusqu'à <span class="base-highlight">10 x plus efficace</span> que les notifications traditionnelles
       </h2>
     </header>
 
@@ -310,60 +303,48 @@
         </div>
       </div>
     </div>
-
-    <div class="row text-center">
-
-    <div class="col-md-2 service-category col-sm-4">
-      <div class="main-service">
-        <h4>Project Management</h4>
-        <i class="icon-paintbrush icon-color-4"></i>
-      </div>
-    </div>
-
-    <div class="col-md-2 service-category col-sm-4">
-      <div class="main-service">
-        <h4>Graphic Design</h4>
-        <i class="icon-lightbulb icon-color-5"></i>
-      </div>
-    </div>
-
-    <div class="col-md-2 service-category col-sm-4">
-      <div class="main-service">
-        <h4>Brand Design</h4>
-        <i class="icon-video icon-color-6"></i>
-      </div>
-    </div>
-
-    <div class="col-md-2 service-category col-sm-4">
-      <div class="main-service">
-        <h4>Brand Design</h4>
-        <i class="icon-video icon-color-4"></i>
-      </div>
-    </div>
-
-    <div class="col-md-2 service-category col-sm-4">
-      <div class="main-service">
-        <h4>Brand Design</h4>
-        <i class="icon-video icon-color-5"></i>
-      </div>
-    </div>
-
-    <div class="col-md-2 service-category col-sm-4">
-      <div class="main-service">
-        <h4>Brand Design</h4>
-        <i class="icon-video icon-color-6"></i>
-      </div>
-    </div>
-
-    </div>
   </div>
 </div>
 </section>
 <!-- services end -->
 
+  <!-- features-grid -->
+  <section id="technologie" class="features-grid pad-top-1 pad-bottom-2 bb-1">
+    <div class="container">
+
+      <header class="heading_1 text-center">
+        <i class="icon icon-tools"></i>
+        <h2 class="main_title">
+          Une brique technologique <span class="base-highlight">à votre service</span>
+        </h2>
+      </header>
+
+
+      <div class="row text-center">
+
+        <div class="col-sm-4">
+          <i class="icon-mobile icon-color-1"></i>
+          <h4>Android SDK</h4>
+          <p>Notre technologie s'intègre dans le code source de votre app et fonctionne sur l'ensemble des devices Android.</p>
+        </div>
+        <div class="col-sm-4">
+          <i class="icon-rss icon-color-2"></i>
+          <h4>API</h4>
+          <p>Nous récupérons vos flux (ex: RSS) afin de les afficher directement sur l'écran de verrouillage de l'utilisateur.</p>
+        </div>
+        <div class="col-sm-4">
+          <i class="icon-target icon-color-3"></i>
+          <h4>Back Office</h4>
+          <p>Gérer votre audience et suivez en temps réel l'engagement avec vos utilisateurs.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- features-grid end -->
 
  <!-- about-us -->
- <section id="about" class="about-us padding">
+ <!-- <section id="about" class="about-us padding">
   <div class="container">
 
     <header class="heading_1 text-center">
@@ -429,20 +410,17 @@
 
     </div>
   </div>
-</section>
+</section> -->
 <!-- about-us end -->
 
 
-
-
  <!-- portfolio -->
- <!-- <section id="portfolio" class="portfolio  bg-color3 pad-top-1">
+<section id="portfolio" class="portfolio  bg-color3 pad-top-1">
 
   <header class="heading_1 text-center">
-    <i class="icon icon-mobile"></i>
+    <span class="sub_title">Exemples</span>
     <h2 class="main_title">
-      <span class="sub_title">Portfolio</span>
-      Our <span class="base-highlight">Works</span>
+      Des <span class="base-highlight">Possibilités infinies</span>
     </h2>
   </header>
 
@@ -451,32 +429,40 @@
       All
       <span class="tooltip-x-content">
         <span class="tooltip-x-front"><i class="fa fa-check"></i></span>
-        <span class="tooltip-x-back">*<br>All<br>Items</span>
+        <span class="tooltip-x-back">*<br>All<br>Clients</span>
       </span>
     </button>
 
 
-    <button type="button" data-filter=".web-design" class="filter-item  tooltip-x">Web Design
+    <button type="button" data-filter=".web-design" class="filter-item  tooltip-x">Media
       <span class="tooltip-x-content">
         <span class="tooltip-x-front"><i class="fa fa-css3"></i></span>
-        <span class="tooltip-x-back">5<br>Web Design<br>Item</span>
+        <span class="tooltip-x-back">2<br>Media<br>Clients</span>
       </span>
     </button>
 
-    <button type="button" data-filter=".web_dev" class="filter-item  tooltip-x">Web Development
+    <button type="button" data-filter=".web_dev" class="filter-item  tooltip-x">Gaming
       <span class="tooltip-x-content">
         <span class="tooltip-x-front"><i class="fa fa-code"></i></span>
-        <span class="tooltip-x-back">4<br>Web Dev<br>Item</span>
+        <span class="tooltip-x-back">2<br>Gaming<br>Clients</span>
       </span>
     </button>
 
 
-    <button type="button" data-filter=".uncategorized" class="filter-item  tooltip-x">Uncategorized
+    <button type="button" data-filter=".uncategorized" class="filter-item  tooltip-x">Travel
       <span class="tooltip-x-content">
         <span class="tooltip-x-front"><i class="fa fa-list"></i></span>
-        <span class="tooltip-x-back">2<br>Uncategorized<br>Item</span>
+        <span class="tooltip-x-back">2<br>Travel<br>Clients</span>
       </span>
     </button>
+
+    <button type="button" data-filter=".uncategorized" class="filter-item  tooltip-x">E-commerce
+      <span class="tooltip-x-content">
+        <span class="tooltip-x-front"><i class="fa fa-list"></i></span>
+        <span class="tooltip-x-back">2<br>E-commerce<br>Clients</span>
+      </span>
+    </button>
+
   </div>
 
   <div id="grid-container" class="bg-color1">
@@ -485,21 +471,15 @@
         <li class="col-md-3 col-sm-6 item web_dev web-design">
           <div class="item-wrapper">
             <div class="image">
-              <a href="img/portfolio/bg3.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg3.jpg" alt="Portfolio" />
+              <a href="img/client/main20mn.png" class="image_pop" title="Project Title">
+              <img class="img-responsive" src="img/client/main20mn.png" alt="Portfolio" />
               </a>
               <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
+                <a href="#">Media</a>
               </p>
             </div>
             <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
+              <h5 class="h6"><a href="#"><strong>20 Minutes</strong></a></h5>
             </div>
           </div>
         </li>
@@ -508,46 +488,32 @@
         <li class="col-md-3 col-sm-6 item web_dev web-design">
           <div class="item-wrapper">
             <div class="image">
-              <a href="img/portfolio/bg5.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg5.jpg" alt="Portfolio" />
+              <a href="img/client/mainlemonde.png" class="image_pop" title="Project Title">
+              <img class="img-responsive" src="img/client/mainlemonde.png" alt="Portfolio" />
               </a>
               <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
+                <a href="#">Gaming</a>
               </p>
             </div>
             <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
+              <h5 class="h6"><a href="#"><strong>Pokemon Go</strong></a></h5>
             </div>
           </div>
         </li>
-
-
 
 
       <li class="col-md-3 col-sm-6 item web_dev web-design">
           <div class="item-wrapper">
             <div class="image">
-              <a href="img/portfolio/bg9.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg9.jpg" alt="Portfolio" />
+              <a href="img/client/maintf1.png" class="image_pop" title="Project Title">
+              <img class="img-responsive" src="img/client/maintf1.png" alt="Portfolio" />
               </a>
               <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
+                <a href="#">Travel</a>
               </p>
             </div>
             <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
+              <h5 class="h6"><a href="#"><strong>Voyages-SNCF</strong></a></h5>
             </div>
           </div>
         </li>
@@ -556,130 +522,24 @@
         <li class="col-md-3 col-sm-6 item web_dev web-design">
           <div class="item-wrapper">
             <div class="image">
-              <a href="img/portfolio/bg11.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg11.jpg" alt="Portfolio" />
+              <a href="img/client/maincatalina.png" class="image_pop" title="Project Title">
+              <img class="img-responsive" src="img/client/maincatalina.png" alt="Portfolio" />
               </a>
               <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
+                <a href="#">E-commerce</a>
               </p>
             </div>
             <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
+              <h5 class="h6"><a href="#"><strong>Catalina</strong></a></h5>
             </div>
           </div>
         </li>
-
-
-
-
-      <li class="col-md-3 col-sm-6 item web-design uncategorized">
-          <div class="item-wrapper">
-            <div class="image">
-              <a href="img/portfolio/bg4.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg4.jpg" alt="Portfolio" />
-              </a>
-              <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
-              </p>
-            </div>
-            <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
-            </div>
-          </div>
-        </li>
-
-
-        <li class="col-md-3 col-sm-6 item web_dev uncategorized">
-          <div class="item-wrapper">
-            <div class="image">
-              <a href="img/portfolio/bg6.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg6.jpg" alt="Portfolio" />
-              </a>
-              <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
-              </p>
-            </div>
-            <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
-            </div>
-          </div>
-        </li>
-
-
-
-
-      <li class="col-md-3 col-sm-6 item web-design">
-          <div class="item-wrapper">
-            <div class="image">
-              <a href="img/portfolio/bg12.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg12.jpg" alt="Portfolio" />
-              </a>
-              <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
-              </p>
-            </div>
-            <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
-            </div>
-          </div>
-        </li>
-
-
-        <li class="col-md-3 col-sm-6 item web-design uncategorized">
-          <div class="item-wrapper">
-            <div class="image">
-              <a href="img/portfolio/bg13.jpg" class="image_pop" title="Project Title">
-              <img class="img-responsive" src="img/portfolio/bg13.jpg" alt="Portfolio" />
-              </a>
-              <p>
-                <a href="#">Bootstrap</a>
-                <a href="#">Landing</a>
-                <a href="#">css</a>
-                <a href="#">jQuery</a>
-              </p>
-            </div>
-            <div class="text">
-              <h5 class="h6"><a href="#">Infinite Landing Page</a></h5>
-              <span>by <strong>Naveen</strong></span>
-
-
-            </div>
-          </div>
-        </li>
-
 
     </ul>
 
-
-
-
   </div>
 
-</section> -->
+</section>
 <!-- portfolio end -->
 
 
@@ -823,7 +683,7 @@
 
 
  <!-- statistics -->
- <section id="statistics" class="statistics text-center">
+ <!-- <section id="statistics" class="statistics text-center">
 
   <div class="counter_wraper single-padding cover-bg dark-bg" data-stellar-background-ratio="0.3" style="background-image: url(img/background/bg_desk.jpeg);">
     <div class="container">
@@ -854,13 +714,13 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- statistics end -->
 
 
 
  <!-- subscribe -->
- <section class="subscribe single-padding cover-bg bb-1" style="background-image: url(img/background/bg8.jpg);">
+ <!-- <section class="subscribe single-padding cover-bg bb-1" style="background-image: url(img/background/bg8.jpg);">
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-md-offset-7">
@@ -879,9 +739,8 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- subscribe end-->
-
 
 
  <!-- cta-3 call to action -->
@@ -889,11 +748,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="text-uppercase mar-bottom-1">Brought you by <a href="#"><strong>Infinite</strong></a></p>
-        <img class="mar-bottom-1" src="img/logo/icon.png" alt="logo">
-        <h3 class="text-uppercase">DESIGN BETTER. FASTER. TOGETHER.</h3>
-        <p class="italic">The Infinite is most converting landing page ever, Everything you can wish for.</p>
-        <a href="#" class="btn btn-primary mar-top-1">Buy Now</a>
+        <p class="text-uppercase mar-bottom-1">Brought to you by <a href="#"><strong>Swiper</strong></a></p>
+        <img class="mar-bottom-1" src="img/logo/logo_blue.png" alt="logo">
+        <h3 class="text-uppercase"> ENGAGE BETTER. FASTER. TOGETHER.</h3>
+        <a href="#" class="btn btn-primary mar-top-1">Visit Swiper</a>
       </div>
     </div>
   </div>
@@ -984,7 +842,7 @@
 <!-- pricing-table -->
 
  <!-- client-testimonial testimonial -->
- <section id="testimonial" class="client-testimonial dark-bg text-center padding pad-bottom-2" data-stellar-background-ratio="0.3" style="background-image: url(img/background/bg12.jpg);">
+ <!-- <section id="testimonial" class="client-testimonial dark-bg text-center padding pad-bottom-2" data-stellar-background-ratio="0.3" style="background-image: url(img/background/bg12.jpg);">
   <div class="container">
     <div class="row">
 
@@ -1022,7 +880,7 @@
 
 
   </div>
-</section>
+</section> -->
 <!-- client-testimonial -->
 
 
