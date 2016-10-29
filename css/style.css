@@ -2211,6 +2211,11 @@ color: #ddd;
 
 .team .member_pop > img{
   max-width: 100%;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
 }
 
 .team_member_bio {
@@ -2536,9 +2541,26 @@ color: #ddd;
   outline: none;
 }
 
-.company img{
+/* .company img{
   margin: 0 20px;
   cursor: pointer;
+} */
+
+.company img {
+    position: relative;
+    float: left;
+    margin: 20 20px
+    width:  150px;
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    cursor: pointer;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
 }
 
 .testmonial_slider_1 img{
